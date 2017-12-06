@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS user_info(id int not null primary key auto_increment, user_id varchar(16) not null unique);
