@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,6 +19,7 @@ import javax.persistence.Column;
 @Table(name="user_info")
 @Getter
 @Setter
+@Component
 public class UserInfoEntity {
 	
 	@Id
@@ -29,7 +32,7 @@ public class UserInfoEntity {
 	@Column(name="password", columnDefinition="varchar(16)", nullable=false)
 	private String password;
 	
-	@Column(name="inser_date", columnDefinition="datetime", nullable=false)
+	@Column(name="insert_date", columnDefinition="datetime", nullable=false)
 	private Timestamp insertDate;
 	
 	@Column(name="update_date", columnDefinition="datetime", nullable=true)
