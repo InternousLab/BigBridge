@@ -1,5 +1,7 @@
 package com.internouslab.application.service;
 
-public interface UserInfoServiceInterface {
+import com.internouslab.application.entity.UserInfoEntity;
 
+public interface UserInfoServiceInterface {	
+	public UserInfoEntity findByUserNameAndPassword(String userName, String password);
 }
