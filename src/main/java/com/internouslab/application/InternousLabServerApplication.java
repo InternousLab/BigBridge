@@ -9,4 +9,5 @@ public class InternousLabServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(InternousLabServerApplication.class, args);
 	}
+
 }
